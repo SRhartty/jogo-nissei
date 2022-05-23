@@ -12,11 +12,22 @@ $link = mysqli_connect($host, $user, $pass, $database);
 //envia ao banco de dados os info do formulario:
 $resp1 = $_SESSION['resp1'];
 $resp2 = $_SESSION['resp2'];
+$resp3 = $_SESSION['resp3'];
+$resp4 = $_SESSION['resp4'];
+$resp5 = $_SESSION['resp5'];
+$resp6 = $_SESSION['resp6'];
+$resp7 = $_SESSION['resp7'];
+$resp8 = $_SESSION['resp8'];
+$resp9 = $_SESSION['resp9'];
+$resp10 = $_SESSION['resp10'];
+$resp11 = $_SESSION['resp11'];
+$resp12 = $_SESSION['resp12'];
 $nomes= $_SESSION['nomes'];
 $sobrenomes = $_SESSION['sobrenomes'];
 
 
-$resul_table = "INSERT INTO resp_primaria(respostas, resp2, nome_pessoa, sobrenome_pessoa ) VALUES ('$resp1', '$resp2', '$nomes', '$sobrenomes')";
+$resul_table = "INSERT INTO resp_primaria(resp1, resp2, resp3, resp4, resp5, resp6, resp7, resp8, resp9, resp10, resp11, resp12, nome_pessoa, sobrenome_pessoa ) 
+VALUES ('$resp1', '$resp2', '$resp3', '$resp4', '$resp5', '$resp6', '$resp7', '$resp8', '$resp9', '$resp10', '$resp11', '$resp12','$nomes', '$sobrenomes')";
 $result_quest = mysqli_query($link, $resul_table);
 
 //busca o id das respostas no banco de dados:
