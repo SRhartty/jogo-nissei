@@ -52,3 +52,8 @@ if ($_SESSION['resp12'] == $row_usuario['resp12']) {
 }
 
 echo $_SESSION['compat'] . " respostas iguais!";
+?>
+
+<div class="fb-share-button" data-href="<?php $_SERVER['HTTP_HOST']?>jogo_namorados/index.php" data-layout="box_count" data-size="large" data-mobile-iframe="true">
+<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1/jogo_namorados/index.php%2F&amp;src=sdkpreparse">Compartilhar</a>
+</div>

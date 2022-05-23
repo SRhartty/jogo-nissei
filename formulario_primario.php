@@ -5,209 +5,218 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario_primario</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario_primario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-<form name="form1" id="form1" action="poust_database.php" method="POST">
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp1" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp1" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp1" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp1" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp2" name="resp2" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp2" name="resp2" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp2" name="resp2" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp2" name="resp2" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp3" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp3" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp3" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp3" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp4" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp4" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp4" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp4" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp5" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp5" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp5" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp5" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp6" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp6" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp6" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp6" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp7" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp7" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp7" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp7" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp8" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp8" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp8" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp8" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp9" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp9" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp9" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp9" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp10" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp10" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp10" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp10" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp11" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp11" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp11" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp11" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <table border="1">
-    <tbody>
-      <tr>
-        <td><input class="resp1" name="resp12" type="radio" value="01" required>Resposta 1</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp12" type="radio" value="02">Resposta 2</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp12" type="radio" value="03">Resposta 3</td>
-      </tr>
-      <tr>
-        <td><input class="resp1" name="resp12" type="radio" value="04">Resposta 4</td>
-      </tr>
-    </tbody>
-  </table>
-  <input name="enviar" type="submit" value="Enviar">
-</form>
+  <div class="index">
+    <div class="coluna">
+      <img class="logo" src="imagens/LOGO_2_.svg" alt="jogo para casais">
+      <form name="form1" id="form1" action="poust_database.php" method="POST">
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp1" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp1" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp1" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp1" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp2" name="resp2" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp2" name="resp2" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp2" name="resp2" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp2" name="resp2" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp3" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp3" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp3" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp3" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp4" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp4" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp4" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp4" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp5" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp5" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp5" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp5" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp6" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp6" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp6" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp6" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp7" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp7" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp7" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp7" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp8" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp8" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp8" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp8" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp9" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp9" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp9" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp9" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp10" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp10" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp10" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp10" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp11" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp11" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp11" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp11" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td><input class="resp1" name="resp12" type="radio" value="01" required>Resposta 1</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp12" type="radio" value="02">Resposta 2</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp12" type="radio" value="03">Resposta 3</td>
+            </tr>
+            <tr>
+              <td><input class="resp1" name="resp12" type="radio" value="04">Resposta 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <input name="enviar" type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
 
 <?php

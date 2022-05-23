@@ -15,14 +15,15 @@ session_start();
 </head>
 
 <body>
-    <div class="formulario">
-        <div class="fundo_form">
+    <div class="index">
+        <div class="coluna">
+            <img class="logo" src="imagens/LOGO_2_.svg" alt="jogo para casais">
             <form class="formulario_inicial" name="form1" id="form1" action="" method="POST">
-                Qual é o seu nome?
+                <h4>Qual é o seu nome?</h4>
                 <input type="text" name="nomes" required><br>
-                Qual é o seu telefone?
+                <h4>Qual é o seu telefone?</h4>
                 <input type="text" name="sobrenomes" required><br>
-                <input name="enviar" type="submit" value="Enviar">
+                <input class="button" name="enviar" type="submit" value="iniciar jogo">
             </form>
         </div>
     </div>
