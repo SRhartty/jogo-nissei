@@ -40,10 +40,10 @@ if ($enviar) {
 
 
     if (empty($_GET['id'])) {
-        header("location: formulario_primario.php");
+        header("location: formulario_primario.php?resp1=01&proxima=proxima#aba-1");
     } else {
         $_SESSION['id'] = $_GET['id'];
-        header("location: formulario_secundario.php");
+        header("location: formulario_secundario.php?resp1=01&proxima=proxima#aba-1");
     }
 }
 
