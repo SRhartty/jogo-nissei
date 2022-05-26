@@ -66,26 +66,22 @@ session_start();
       <form class="formulario" method="POST">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
-            <h2 class="sub">Para começar bem o dia, você gosta de...</h2>
+            <h2 class="sub">CHOCOLATE...</h2>
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">Um banho bem gelado.</h2>
+              <h2 class="resp">BRANCO</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">Uma xicara de cafe quentinho.</h2>
+              <h2 class="resp">PRETO</h2>
             </label>
 
             <input name="resp1" type="radio" value="03" id="i3">
             <label class="radio" for="i3">
-              <h2 class="resp">Um banho bem quente</h2>
+              <h2 class="resp">TANTO FAZ, TODO CHOCOLATE É GOSTOSO</h2>
             </label>
 
-            <input name="resp1" type="radio" value="04" id="i4">
-            <label class="radio" for="i4">
-              <h2 class="resp">Mais cinco minutos de sono.</h2>
-            </label>
             <input class="button" type="submit" name="enviar">
           </section>
         </div>

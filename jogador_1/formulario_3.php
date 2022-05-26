@@ -66,26 +66,18 @@ session_start();
       <form class="formulario" method="POST">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
-            <h2 class="sub">Para começar bem o dia, você gosta de...</h2>
+            <img class="imgsub" src="../imagens/friends.jpg" alt="">
+            <div class="gostngost">
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">Um banho bem gelado.</h2>
+              <h2 class="resp">Não gosta!</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">Uma xicara de cafe quentinho.</h2>
+              <h2 class="resp">Gosta!</h2>
             </label>
-
-            <input name="resp1" type="radio" value="03" id="i3">
-            <label class="radio" for="i3">
-              <h2 class="resp">Um banho bem quente</h2>
-            </label>
-
-            <input name="resp1" type="radio" value="04" id="i4">
-            <label class="radio" for="i4">
-              <h2 class="resp">Mais cinco minutos de sono.</h2>
-            </label>
+            </div>
             <input class="button" type="submit" name="enviar">
           </section>
         </div>

@@ -57,11 +57,28 @@ mysqli_close($link);
         <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-<body>
-        <div class="index">
-                <div class="coluna">
-                        <?php echo $URL_ATUAL; ?>
+<div class="index_primaria">
+        <div class="coluna_final">
+        <img class="logo2" src="../imagens/LOGO_2_.svg" alt="jogo para casais">
+                <div class="fundo">
+                        <section class="conteudo1">
+                                <h1 class="titulo">PARABÉNS!</h1>
+                                <p>Você acabou a primeira etapa do nosso desafio.
+                                        Falta pouco!<br> Compartilhe com o seu amor, siga @nisseioficial_
+                                        e publique<br> uma foto do resultado nos mencionando nos seus stories.</p>
+                                <div>
+                                        <div class="link">
+                                                <h2 class="resp" id="link"><?php echo $URL_ATUAL; ?> <img src="../imagens/copiar.svg" alt=""></h2>
+                                        </div>
+                                        <div class="link">
+                                                <h2 class="resp">Seguir o Instagram da Nissei agora! <img src="../imagens/insta.svg" alt=""></h2>
+                                        </div>
+                                </div>
 
+                        </section>
                 </div>
         </div>
+</div>
 </body>
+
+</html>

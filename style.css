@@ -183,6 +183,7 @@ table {
 .container {
   margin-left: 15px;
   margin-right: 15px;
+  
 }
 
 .formulario {
@@ -214,6 +215,7 @@ table {
   font-weight: 900;
   Font-size: 20px;
   margin-top: 10px;
+  padding-bottom: 15px;
 }
 
 
@@ -302,40 +304,24 @@ h4 {
 
 }
 
-.conteudo2 {
+/*.conteudo2 {
   display: none;
   align-items: center;
   flex-direction: column;
   position: relative;
-  /* altura do link + bordas */
+  /* altura do link + bordas 
   border: 1px solid #D35E5E;
   left: 0px;
   border-radius: 20px;
   background-color: #A02020;
   padding: 20px 220px 20px 227px;
-}
-
-
-/*#aba-1:not(:target) .conteudo1 {
-    display: none;
-
-  }*/
-
-
-
-
+}*/
 
 /*css input radio*/
 input[type="radio"] {
   visibility: hidden;
 }
 
-/*label {
-    display: flex;
-    border: 4px solid #666;
-    width: 300px;
-    float: left;
-  }*/
 .radio {
   display: flex;
   border-bottom: 5px solid #D35E5E;
@@ -348,6 +334,44 @@ input[type="radio"] {
   align-items: center;
 }
 
+.radioimg{
+    border-bottom: 5px solid #D35E5E;
+    background-color: white;
+    width: 100px;
+    justify-content: center;
+    width: 160px;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+/*img {
+  height: 80px;
+}*/
+
+.imgform{
+  margin-top: 10px;
+  height: 80px;
+}
+
+.subimg{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Pixel;
+    font-weight: 900;
+    Font-size: 20px;
+    color: #AF3C3C;
+    
+
+}
+
+.imgsub{
+  height: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .resp {
   font-family: Pixel;
   color: #000000;
@@ -355,25 +379,52 @@ input[type="radio"] {
   Font-size: 20px;
 }
 
+.gostngost{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
 .linhaimg {
   display: flex;
   flex-direction: row;
 }
 
-.respimg {
-  display: flex;
-  border-bottom: 5px solid #D35E5E;
-  width: 140px;
-  float: left;
-  background-color: white;
-  border-radius: 10px;
-  height: 110px;
-  justify-content: center;
-  align-items: center;
-}
-
-
 input[type="radio"]:checked+label {
   border-bottom: 5px solid #D35E5E;
   background-color: #FFBA09;
 }
+
+.link{
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+}
+
+.fundo{
+  background-color: #A02020;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.coluna_final{
+  margin-left: 15px;
+    display: flex;
+    margin-right: 15px;
+    flex-direction: column;
+    align-items: center;
+    align-content:center;
+    
+}
+
+.titulo{
+  font-family: Pixel;
+  color: #FFBA08;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+
