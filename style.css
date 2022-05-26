@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @font-face {
-    font-family: Pixel;
-    src: url(fonts/PixelOperator.ttf);
+  font-family: Pixel;
+  src: url(fonts/PixelOperator.ttf);
 }
 
 /* reseta o css nativo*/
@@ -87,12 +87,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -107,254 +107,273 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* css pagina index.php*/
 .logo {
-    padding-bottom: 70px;
-    width: 300px;
+  padding-bottom: 70px;
+  width: 300px;
 }
 
 .logo2 {
-    padding: 70px 0px 70px 0px;
-    width: 300px;
+  padding: 70px 0px 70px 0px;
+  width: 300px;
 }
 
 .index {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #F62A2A;
-    background-image: url(imagens/fundobg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F62A2A;
+  background-image: url(imagens/fundobg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
-.index_primaria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F62A2A;
-    background-image: url(imagens/fundobg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+.index_primaria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F62A2A;
+  background-image: url(imagens/fundobg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 
 }
 
 .coluna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #D35E5E;
+  border-radius: 20px;
+  background-color: #A02020;
 }
 
 
 
 .formulario_inicial {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 90px 10px 90px;
-    background: #A02020;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 90px 10px 90px;
+  background: #A02020;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 
 }
 
-.sub{
+.sub {
   display: flex;
   align-items: center;
-    font-family: Pixel;
-    color: #ffffff;
-    font-weight: 900;
-    Font-size: 20px;
+  font-family: Pixel;
+  color: #ffffff;
+  font-weight: 900;
+  Font-size: 20px;
+  margin-top: 10px;
 }
 
 
 
 h4 {
-    font-family: Pixel;
-    color: #ffffff;
-    font-weight: 400;
-    Font-size: 20px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
+  font-family: Pixel;
+  color: #ffffff;
+  font-weight: 400;
+  Font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
-input {
-    border-radius: 5px;
-    width: 42vh;
-    height: 30px;
-    border: 0ch;
+.seunome {
+  border-radius: 5px;
+  height: 30px;
+  border: 0ch;
+  width: 200px;
 }
 
 .button {
-    font-family: Pixel;
-    color: #000000;
-    Font-size: 20px;
-    font-weight: 900;
-    width: 20vh;
-    height: 50px;
-    align-self: center;
-    background-color: #75D846;
-    margin-bottom: -30px;
+  font-family: Pixel;
+  color: #000000;
+  Font-size: 20px;
+  font-weight: 900;
+  width: 20vh;
+  height: 50px;
+  align-self: center;
+  background-color: #75D846;
+  margin-bottom: -30px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
+
+.vetor {
+  width: 20px;
+  height: 25px;
+}
+
+
 .abas {
-    position: relative;
-    background-color: white;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
-  }
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
 
-  .aba {
-    display: inline;
-  }
 
-  .aba>h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    float: left;
-    padding: 0.5em 1em;
-    background: #C14848;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-radius: 15px;
-  }
+.aba>h1 {
+  display: flex;
+  padding: 15px;
+  background: #C14848;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 15px;
+}
 
-  .aba:not(:target) h1 {
-    border-bottom: 0 none;
-
-  }
-
-  .aba:target h1,
-  a:hover {
-    background: #FFBA09;
-  }
-
-  .conteudo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: calc(2em + 50px);
-    /* altura do link + bordas */
-    z-index: -2;
-    border: 1px solid #D35E5E;
-    left: 0px;
-    border-radius: 20px;
-    background-color: #A02020;
-    padding: 20px 220px 20px 227px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .conteudo {
-      top: calc(2em + 95px);
-      padding: 20px 72px 20px 72px;
-    }
-  }
-
-  .aba:target .conteudo {
-    z-index: 1;
-  }
+.aba:target h1 {
+  background: #FFBA09;
+}
 
 
 
 
+.conteudo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-  /*css input radio*/
-  input[type="radio"] {
-    visibility: hidden;
-  }
+}
 
-  /*label {
+
+.conteudo1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.conteudo2 {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  /* altura do link + bordas */
+  border: 1px solid #D35E5E;
+  left: 0px;
+  border-radius: 20px;
+  background-color: #A02020;
+  padding: 20px 220px 20px 227px;
+}
+
+
+/*#aba-1:not(:target) .conteudo1 {
+    display: none;
+
+  }*/
+
+
+
+
+
+/*css input radio*/
+input[type="radio"] {
+  visibility: hidden;
+}
+
+/*label {
     display: flex;
     border: 4px solid #666;
     width: 300px;
     float: left;
   }*/
-  .radio {
-    display: flex;
-    border-bottom: 5px solid #D35E5E;
-    width: 300px;
-    float: left;
-    background-color: white;
-    border-radius: 10px;
-    height: 35px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .resp{
-    font-family: Pixel;
-    color: #000000;
-    font-weight: 900;
-    Font-size: 20px;
+.radio {
+  display: flex;
+  border-bottom: 5px solid #D35E5E;
+  width: 300px;
+  float: left;
+  background-color: white;
+  border-radius: 10px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
 }
 
-.linhaimg{
+.resp {
+  font-family: Pixel;
+  color: #000000;
+  font-weight: 900;
+  Font-size: 20px;
+}
+
+.linhaimg {
   display: flex;
   flex-direction: row;
 }
 
-  .respimg{
-    display: flex;
-    border-bottom: 5px solid #D35E5E;
-    width: 140px;
-    float: left;
-    background-color: white;
-    border-radius: 10px;
-    height: 110px;
-    justify-content: center;
-    align-items: center;
-  }
+.respimg {
+  display: flex;
+  border-bottom: 5px solid #D35E5E;
+  width: 140px;
+  float: left;
+  background-color: white;
+  border-radius: 10px;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+}
 
 
-  input[type="radio"]:checked+label {
-    border-color: #D35E5E;
-  }
-
-  .vetor {
-    width: 20px;
-    height: 25px;
-  }
-
- 
- 
+input[type="radio"]:checked+label {
+  border-bottom: 5px solid #D35E5E;
+  background-color: #FFBA09;
+}

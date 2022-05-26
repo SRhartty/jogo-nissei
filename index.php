@@ -20,9 +20,9 @@ session_start();
             <img class="logo" src="imagens/LOGO_2_.svg" alt="jogo para casais">
             <form class="formulario_inicial" name="form1" id="form1" action="" method="POST">
                 <h4>Qual é o seu nome?</h4>
-                <input type="text" name="nomes" required><br>
+                <input class="seunome" type="text" name="nomes" required><br>
                 <h4>Qual é o seu telefone?</h4>
-                <input type="text" name="sobrenomes" required><br>
+                <input class="seunome" type="text" name="sobrenomes" required><br>
                 <input class="button" name="enviar" type="submit" value="iniciar jogo">
             </form>
         </div>
@@ -39,11 +39,12 @@ if ($enviar) {
     $_SESSION['sobrenomes'] = $_POST['sobrenomes'];
 
 
+
     if (empty($_GET['id'])) {
-        header("location: formulario_primario.php?resp1=01&proxima=proxima#aba-1");
+        header("location: jogador_1/formulario_1.php?#aba-1");
     } else {
         $_SESSION['id'] = $_GET['id'];
-        header("location: formulario_secundario.php?resp1=01&proxima=proxima#aba-1");
+        header("location: jogador_2/formulario_1.php?#aba-1");
     }
 }
 
