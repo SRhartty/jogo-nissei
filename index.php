@@ -20,9 +20,11 @@ session_start();
             <img class="logo" src="imagens/LOGO_2_.svg" alt="jogo para casais">
             <form class="formulario_inicial" name="form1" id="form1" action="" method="POST">
                 <h4>Qual é o seu nome?</h4>
-                <input class="seunome" type="text" name="nomes" required><br>
+                <input class="seunome" type="text" name="nome" required><br>
                 <h4>Qual é o seu telefone?</h4>
-                <input class="seunome" type="text" name="sobrenomes" required><br>
+                <input class="seunome" type="text" name="telefone" required><br>
+                <h4>CPF</h4>
+                <input class="seunome" type="text" name="cpf" required><br>
                 <input class="button" name="enviar" type="submit" value="iniciar jogo">
             </form>
         </div>
@@ -33,12 +35,12 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'enviar', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar' );
 if ($enviar) {
-    $_SESSION['nomes'] = $_POST['nomes'];
-    $_SESSION['sobrenomes'] = $_POST['sobrenomes'];
-
-
+    $_SESSION['nome'] = $_POST['nome'];
+    $_SESSION['telefone'] = $_POST['telefone'];
+    $_SESSION['cpf'] = $_POST['cpf'];
+    $cpf = $_POST['cpf'];
 
     if (empty($_GET['id'])) {
         header("location: jogador_1/formulario_1.php?#aba-1");

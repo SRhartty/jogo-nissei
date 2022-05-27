@@ -59,54 +59,49 @@ session_start();
           <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-13">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-14">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-15">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-16">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-17">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-18">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-19">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
         <div class="aba" id="aba-20">
-          <h1><img class="vetor" src="../imagens/coracaov.svg" alt=""></h1>
+          <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
         </div>
       </div>
 
 
 
       <!-- Aqui, criação da primeira aba -->
-      <form class="formulario" method="POST" action="formulario_13.php">
+      <form class="formulario" method="POST" action="poust_database.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
-            <h2 class="sub">Quando dorme...</h2>
+            <img class="imgsub" src="../imagens/papel.jpg" alt="">
+            <div class="gostngost">
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">Ronca parece um trator.</h2>
+              <h2 class="resp">Não gosta!</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">Acorda nem com furação.</h2>
+              <h2 class="resp">Gosta!</h2>
             </label>
-
-            <input name="resp1" type="radio" value="03" id="i3">
-            <label class="radio" for="i3">
-              <h2 class="resp">Não dorme sem um copo de água</h2>
-            </label>
-
-            
+            </div>
             <input class="button" type="submit" name="enviar">
           </section>
         </div>
@@ -119,11 +114,11 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'resp1', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar', FILTER_SANITIZE_STRING);
 if ($enviar) {
-  $_SESSION['resp12'] = $_POST['resp1'];
-  //header('Location: poust_database.php');
+  //header('Location: formulario_2.php?#aba-2');
+  $_SESSION['resp20'] = $_POST['resp1'];
+ 
 }
-
 
 ?>

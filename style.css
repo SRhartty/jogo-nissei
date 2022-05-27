@@ -4,6 +4,10 @@
   font-family: Pixel;
   src: url(fonts/PixelOperator.ttf);
 }
+@font-face {
+  font-family:AmpleSoft ;
+  src: url(fonts/AmpleSoftPro.ttf);
+}
 
 /* reseta o css nativo*/
 html,
@@ -169,11 +173,40 @@ table {
   background-image: url(imagens/fundobg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  height: 120vh;
   width: 100vw;
-  height: 100vh;
 
 }
 
+.index_final{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F62A2A;
+    background-image: url(imagens/fundobg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .index_final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F62A2A;
+    background-image: url(imagens/fundobg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 110vh;
+    width: 120vw;
+  }
+  
+}
 .coluna {
   display: flex;
   flex-direction: column;
@@ -274,17 +307,14 @@ h4 {
 
 .aba>h1 {
   display: flex;
-  padding: 15px;
-  background: #C14848;
+  padding: 7px;
   border-width: 5px;
-  border-style: solid;
-  border-color: #ffffff;
   border-radius: 15px;
 }
 
-.aba:target h1 {
+/*.aba:target h1 {
   background: #FFBA09;
-}
+}*/
 
 
 
@@ -373,10 +403,14 @@ input[type="radio"] {
 }
 
 .resp {
+  display: flex;
   font-family: Pixel;
   color: #000000;
   font-weight: 900;
   Font-size: 20px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .gostngost{
@@ -399,15 +433,25 @@ input[type="radio"]:checked+label {
 .link{
   background-color: white;
   margin: 10px 10px 10px 10px;
+  padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    border-radius: 10px;
+    border-bottom: 5px solid #A63131;
+  
 }
 
 .fundo{
+  display: flex;
+  justify-content: center;
   background-color: #A02020;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
+  border-bottom: 5px solid #721919
 }
 
 .coluna_final{
@@ -421,10 +465,26 @@ input[type="radio"]:checked+label {
 }
 
 .titulo{
-  font-family: Pixel;
+  font-family: AmpleSoft;
   color: #FFBA08;
   font-weight: 900;
   font-size: 28px;
+  padding-bottom: 10px;
 }
 
+.paragrafo{
+  font-family: AmpleSoft;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+}
+
+.bannerfinal{
+  width: 480px;
+  margin-top: 20px;
+}
+
+.svg{
+  width: 20px;
+  margin-left: 5px;
+}
 
