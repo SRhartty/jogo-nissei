@@ -87,19 +87,19 @@ session_start();
 
 
       <!-- Aqui, criação da primeira aba -->
-      <form class="formulario" method="POST" action="formulario_8.php?#aba-8">
+      <form class="formulario" method="POST" action="formulario_8.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
             <img class="imgsub" src="../imagens/marley.jpg" alt="">
             <div class="gostngost">
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">CHORA MUITO</h2>
+              <h2 class="resp">Chora muito</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">NÃO DERRAMA UMA LÁGRIMA</h2>
+              <h2 class="resp">Não derrama nem uma lágrima</h2>
             </label>
             </div>
             <input class="button" type="submit" name="enviar">
@@ -114,7 +114,7 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'resp1', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   $_SESSION['resp7'] = $_POST['resp1'];
   //header('Location: formulario_8.php?#aba-8');

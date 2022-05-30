@@ -87,18 +87,18 @@ session_start();
 
 
       <!-- Aqui, criação da primeira aba -->
-      <form class="formulario" method="POST" action="formulario_9.php?#aba-9">
+      <form class="formulario" method="POST" action="formulario_9.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
             <h2 class="sub">Gosta de dormir na cama do lado...</h2>
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">Direito.</h2>
+              <h2 class="resp">Direito</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">esquerdo.</h2>
+              <h2 class="resp">esquerdo</h2>
             </label>
 
            
@@ -114,7 +114,7 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'resp1', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   $_SESSION['resp8'] = $_POST['resp1'];
   //header('Location: formulario_9.php?#aba-9');

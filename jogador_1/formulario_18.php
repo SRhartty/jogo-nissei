@@ -87,9 +87,7 @@ session_start();
 
 
       <!-- Aqui, criação da primeira aba -->
-      <form class="formulario" method="POST" action="formulario_19.php?#aba-15">
-        <div class="conteudo">
-        <form class="formulario" method="POST" action="formulario_4.php?#aba-4">
+      <form class="formulario" method="POST" action="formulario_19.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
             <img class="imgsub" src="../imagens/coca.jpg" alt="">
@@ -116,7 +114,7 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'enviar', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   //header('Location: formulario_2.php?#aba-2');
   $_SESSION['resp18'] = $_POST['resp1'];

@@ -93,12 +93,12 @@ session_start();
             <h2 class="sub">Quando dorme...</h2>
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">Ronca parece um trator.</h2>
+              <h2 class="resp">Ronca parece um trator</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">Acorda nem com furação.</h2>
+              <h2 class="resp">Acorda nem com furação</h2>
             </label>
 
             <input name="resp1" type="radio" value="03" id="i3">
@@ -119,7 +119,7 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'resp1', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   $_SESSION['resp12'] = $_POST['resp1'];
   //header('Location: poust_database.php');

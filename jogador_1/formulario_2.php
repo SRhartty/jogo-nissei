@@ -87,7 +87,7 @@ session_start();
 
 
       <!-- Aqui, criação da primeira aba -->
-      <form class="formulario" method="POST" action="formulario_3.php?#aba-3">
+      <form class="formulario" method="POST" action="formulario_3.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
             <h2 class="sub">Você gosta mais de...</h2>
@@ -120,7 +120,7 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'resp1', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   $_SESSION['resp2'] = $_POST['resp1'];
   //header('Location: formulario_3.php?#aba-3');

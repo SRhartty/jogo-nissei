@@ -1,16 +1,10 @@
 <?php
 session_start();
 //conexao com o banco de dados:
-$host = "localhost";
-$user = "root";
-$pass = "";
-$database = "nissei";
-
-
-$link = mysqli_connect($host, $user, $pass, $database);
+include_once "../conexao/conexao.php";
 
 //envia ao banco de dados os info do formulario:
-$resp1 = $_SESSION['resp1'];
+$resp1 = $_SESSION['resp01'];
 $resp2 = $_SESSION['resp2'];
 $resp3 = $_SESSION['resp3'];
 $resp4 = $_SESSION['resp4'];
@@ -31,13 +25,14 @@ $resp18 = $_SESSION['resp18'];
 $resp19 = $_SESSION['resp19'];
 $resp20 = $_SESSION['resp20'];
 $nome = $_SESSION['nome'];
-$telefone = $_SESSION['telefone'];
+$email = $_SESSION['email'];
 $cpf = $_SESSION['cpf'];
+$insta = $_SESSION['insta'];
 
 
 
-$resul_table = "INSERT INTO resp_namorados(resp1, resp2, resp3, resp4, resp5, resp6, resp7, resp8, resp9, resp10, resp11, resp12, resp13, resp14, resp15, resp16, resp17, resp18, resp19, resp20 , nome, telefone, cpf) 
-VALUES ('$resp1', '$resp2', '$resp3', '$resp4', '$resp5', '$resp6', '$resp7', '$resp8', '$resp9', '$resp10', '$resp11', '$resp12', '$resp13', '$resp14', '$resp15', '$resp16', '$resp17', '$resp18', '$resp19', '$resp20', '$nome', '$telefone', '$cpf')";
+$resul_table = "INSERT INTO resp_namorados(resp1, resp2, resp3, resp4, resp5, resp6, resp7, resp8, resp9, resp10, resp11, resp12, resp13, resp14, resp15, resp16, resp17, resp18, resp19, resp20 , nome, email, cpf, insta) 
+VALUES ('$resp1', '$resp2', '$resp3', '$resp4', '$resp5', '$resp6', '$resp7', '$resp8', '$resp9', '$resp10', '$resp11', '$resp12', '$resp13', '$resp14', '$resp15', '$resp16', '$resp17', '$resp18', '$resp19', '$resp20', '$nome', '$email', '$cpf', '$insta')";
 $result_quest = mysqli_query($link, $resul_table);
 
 //busca o id das respostas no banco de dados:
@@ -47,7 +42,7 @@ while ($row_usuario = mysqli_fetch_assoc($resultado_usuarios)) {
         $iduser = $row_usuario['id'];
 }
 //gera e mostra a url para o segundo jogador:
-$URL_ATUAL = "http://$_SERVER[HTTP_HOST]/jogo_namorados/index.php?id=$iduser";
+$URL_ATUAL = "http://$_SERVER[HTTP_HOST]/jogo_namorados/jogador_2/formulario_1?id=$iduser";
 $_SESSION['url'] = $URL_ATUAL;
 
 
@@ -67,29 +62,105 @@ mysqli_close($link);
         <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-<div class="index_final">
-        <div class="coluna_final">
-        <img class="logo2" src="../imagens/LOGO_2_.svg" alt="jogo para casais">
-                <div class="fundo">
-                        <section class="conteudo1">
-                                <h1 class="titulo">PARABÉNS!</h1>
-                                <p class="paragrafo">Você acabou a primeira etapa do nosso desafio.
-                                        Falta pouco!<br> <b>Compartilhe</b> com o seu amor, siga <b>@nisseioficial_</b>
-                                        e publique<br> uma foto do resultado nos mencionando nos seus stories.</p>
-                                <div>
-                                        <div class="link">
-                                                <a class="a" href="https://api.whatsapp.com/send?text=<?php echo $URL_ATUAL;?>" target="_blank" style="text-decoration: none;"><h2 class="resp" id="link"><?php echo $URL_ATUAL; ?> <img class="svg" src="../imagens/copiar.svg" alt=""></h2></a>
-                                        </div>
-                                        <div class="link">
-                                                <a class="a" href="https://www.instagram.com/nisseioficial_/" target="_blank" style="text-decoration: none;"><h2 class="resp">Seguir o Instagram da Nissei agora! <img class="svg" src="../imagens/insta.svg" alt=""></h2></a>
-                                        </div>
-                                </div>
+<body>
 
-                        </section>
+
+        <div class="index_primaria">
+                <img class="logo2" src="../imagens/LOGO_2_.svg" alt="jogo para casais">
+                <div class="containerfinal">
+                        <!-- Criando a listagem -->
+                        <div class="abas">
+                                <div class="aba" id="aba-1">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-2">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-3">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-4">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-5">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-6">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-7">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-8">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-9">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-10">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-11">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                                <div class="aba" id="aba-12">
+                                        <h1><img class="vetor" src="../imagens/coracaox.svg" alt=""></h1>
+                                </div>
+                        </div>
+
+
+
+                        <!-- Aqui, criação da primeira aba -->
+                        <form class="formulario" method="POST" action="formulario_2.php">
+                                <div class="conteudo">
+                                        <section class="conteudo1">
+                                                <h1 class="titulo">PARABÉNS!</h1>
+                                                <p class="paragrafo">Você acabou a primeira etapa do nosso desafio.
+                                                        Falta pouco! <b>Compartilhe</b> com o seu amor, siga <b>@nisseioficial_</b>
+                                                        e publique uma foto do resultado nos mencionando nos seus stories.</p>
+                                                <div>
+                                                        <div class="link">
+                                                                <a class="a" href="https://www.instagram.com/nisseioficial_/" target="_blank" style="text-decoration: none;">
+                                                                        <h2 class="resp">Seguir o Instagram da Nissei agora! <img class="svg" src="../imagens/insta.svg" alt=""></h2>
+                                                                </a>
+                                                        </div>
+                                                        <div class="link">
+                                                                <a class="a" href="https://api.whatsapp.com/send?text=<?php echo $URL_ATUAL; ?>" target="_blank" style="text-decoration: none;">
+                                                                        <h2 class="resp" id="link"><?php echo "clique para enviar"; ?> <img class="svg" src="../imagens/copiar.svg" alt=""></h2>
+                                                                </a>
+                                                        </div>
+                                                </div>
+
+                                        </section>
+                                </div>
+                        </form>
+                        <img class="bannerfinal" src="../imagens/bannerfinal.svg" alt="">
                 </div>
-                <img class="bannerfinal" src="../imagens/bannerfinal.svg" alt="">
         </div>
-</div>
 </body>
 
 </html>

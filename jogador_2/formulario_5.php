@@ -87,23 +87,23 @@ session_start();
 
 
       <!-- Aqui, criação da primeira aba -->
-      <form class="formulario" method="POST" action="formulario_6.php?#aba-6">
+      <form class="formulario" method="POST" action="formulario_6.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
-            <h2 class="sub">CHOCOLATE...</h2>
+            <h2 class="sub">Chocolate...</h2>
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">BRANCO</h2>
+              <h2 class="resp">Branco</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">PRETO</h2>
+              <h2 class="resp">Preto</h2>
             </label>
 
             <input name="resp1" type="radio" value="03" id="i3">
             <label class="radio" for="i3">
-              <h2 class="resp">TANTO FAZ, TODO CHOCOLATE É GOSTOSO</h2>
+              <h2 class="resp">Tanto faz, todo chocolate e gostoso</h2>
             </label>
 
             <input class="button" type="submit" name="enviar">
@@ -118,7 +118,7 @@ session_start();
 
 <?php
 // atribui a sessao os valores dos formularios apos clicar no botao:
-$enviar = filter_input(INPUT_POST, 'resp1', FILTER_SANITIZE_STRING);
+$enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   $_SESSION['resp5'] = $_POST['resp1'];
   //header('Location: formulario_6.php?#aba-6');
