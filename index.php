@@ -88,7 +88,7 @@ if ($enviar) {
         if (validaCPF($cpf)) {
             if (empty($_GET['id'])) {
                 header("location: jogador_1/formulario_1.php?");
-            } 
+            }
         }
     }
 }
