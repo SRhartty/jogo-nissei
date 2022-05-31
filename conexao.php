@@ -5,4 +5,5 @@ $user = "root";
 $pass = "";
 $database = "nissei";
 
+
 $link = mysqli_connect($host, $user, $pass, $database);

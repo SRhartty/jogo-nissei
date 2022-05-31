@@ -125,6 +125,7 @@ session_start();
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   $_SESSION['resp01'] = $_POST['resp1'];
+  //header('Location: formulario_2.php');
   
 }
 

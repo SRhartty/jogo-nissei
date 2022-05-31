@@ -19,6 +19,7 @@ session_start();
     <div class="index">
         <div class="coluna">
             <img class="logo" src="imagens/LOGO_2_.svg" alt="jogo para casais">
+            <img class="bannerfinal" src="./imagens/bannerfinal.svg" alt="">
             <form class="formulario_inicial" name="form1" id="form1" action="" method="POST">
                 <h4>Qual é o seu nome?</h4>
                 <input class="seunome" type="text" name="nome" required><br>
@@ -36,6 +37,7 @@ session_start();
                 </a>
             </form>
         </div>
+        
     </div>
 </body>
 
@@ -92,6 +94,8 @@ if ($enviar) {
         if (validaCPF($cpf) == false) {
 
             echo  "<script>alert('Insira um cpf valido!');</script>";
+        }else{
+            header('Location:./jogador_1/formulario_1.php');
         }
     }
 }

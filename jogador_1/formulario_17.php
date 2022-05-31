@@ -103,7 +103,7 @@ session_start();
 
             <input name="resp1" type="radio" value="03" id="i3">
             <label class="radio" for="i3">
-              <h2 class="resp">marcar em sorteios no instagram</h2>
+              <h2 class="resp">Marcar em sorteios no instagram</h2>
             </label>
 
             <input name="resp1" type="radio" value="04" id="i4">

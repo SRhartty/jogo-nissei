@@ -158,7 +158,7 @@ mysqli_close($link);
                                         </section>
                                 </div>
                         </form>
-                        <img class="bannerfinal" src="../imagens/bannerfinal.svg" alt="">
+                       
                 </div>
         </div>
 </body>

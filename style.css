@@ -144,7 +144,7 @@ table {
 
 /* css pagina index.php*/
 .logo {
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   width: 300px;
 }
 
@@ -501,7 +501,7 @@ input[type="radio"]:checked+label {
 }
 
 .bannerfinal {
-  width: 510px;
+  width: 380px;
   margin-top: 20px;
 }
 
@@ -586,8 +586,7 @@ input[type="radio"]:checked+label {
     width: 18vh;
   }
   .bannerfinal {
-    width: 400px;
-    margin-top: 20px;
+    width: 380px;
 }
 
 .containerfinal{
