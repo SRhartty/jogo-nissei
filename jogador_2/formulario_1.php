@@ -1,7 +1,7 @@
 <?php
 //inicia a sessao: 
 session_start();
-$_SESSION['id'] = $_GET['id'];
+//$_SESSION['id'] = $_GET['id'];
 ?>
 
 <!DOCTYPE html>

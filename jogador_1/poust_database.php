@@ -42,7 +42,7 @@ while ($row_usuario = mysqli_fetch_assoc($resultado_usuarios)) {
         $iduser = $row_usuario['id'];
 }
 //gera e mostra a url para o segundo jogador:
-$URL_ATUAL = "http://$_SERVER[HTTP_HOST]/jogo_namorados/jogador_2/formulario_1.php?id=$iduser";
+$URL_ATUAL = "http://$_SERVER[HTTP_HOST]/jogo_namorados/jogador_2/inicio.php?id=$iduser";
 $_SESSION['url'] = $URL_ATUAL;
 
 

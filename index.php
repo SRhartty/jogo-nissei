@@ -26,10 +26,14 @@ session_start();
                 <input class="seunome" type="email" name="email" required><br>
                 <h4>CPF</h4>
                 <input class="seunome" type="text" name="cpf" required><br>
-                
                 <h4>@ do seu amor</h4>
                 <input class="seunome" type="text" name="insta" required><br>
-                <input class="button" name="enviar" type="submit" value="iniciar jogo">
+                <div>
+                    <input type="checkbox" required> <span style="color:#ffffff ;">Li e aceito os<a href="lgpd.html" style="color:#ffffff ;"> termos de uso<a></span>
+                </div>
+                <a style="display: flex;justify-content: center;">
+                    <input class="button" name="enviar" type="submit" value="iniciar jogo">
+                </a>
             </form>
         </div>
     </div>
@@ -85,12 +89,12 @@ if ($enviar) {
         echo  "<script>alert('Voce so pode jogar uma vez!');</script>";
     } else {
         //se o cpf for valido ele inicia o quiz
-        if (validaCPF($cpf)) {
-            if (empty($_GET['id'])) {
-                header("location: jogador_1/formulario_1.php?");
-            }
+        if (validaCPF($cpf) == false) {
+
+            echo  "<script>alert('Insira um cpf valido!');</script>";
         }
     }
 }
+
 
 ?>
