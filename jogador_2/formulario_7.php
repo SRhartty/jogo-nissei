@@ -116,7 +116,7 @@ session_start();
 // atribui a sessao os valores dos formularios apos clicar no botao:
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
-  $_SESSION['resp7'] = $_POST['resp1'];
+  $_SESSION['resp6'] = $_POST['resp1'];
   //header('Location: formulario_8.php?#aba-8');
 }
 

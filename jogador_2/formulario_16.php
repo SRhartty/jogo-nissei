@@ -98,7 +98,7 @@ session_start();
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">Series</h2>
+              <h2 class="resp">Séries</h2>
             </label>
 
             <input name="resp1" type="radio" value="03" id="i3">
@@ -108,7 +108,7 @@ session_start();
 
             <input name="resp1" type="radio" value="04" id="i4">
             <label class="radio" for="i4">
-              <h2 class="resp">Videos na internet</h2>
+              <h2 class="resp">Vídeos na internet</h2>
             </label>
             <input class="button" type="submit" name="enviar">
           </section>
@@ -125,7 +125,7 @@ session_start();
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   //header('Location: formulario_2.php?#aba-2');
-  $_SESSION['resp16'] = $_POST['resp1'];
+  $_SESSION['resp15'] = $_POST['resp1'];
  
 }
 

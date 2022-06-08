@@ -125,7 +125,7 @@ session_start();
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   //header('Location: formulario_2.php?#aba-2');
-  $_SESSION['resp14'] = $_POST['resp1'];
+  $_SESSION['resp13'] = $_POST['resp1'];
  
 }
 

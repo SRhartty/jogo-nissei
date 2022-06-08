@@ -90,7 +90,7 @@ session_start();
       <form class="formulario" method="POST" action="formulario_18.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
-            <h2 class="sub">Nao passa o dia sem...</h2>
+            <h2 class="sub">Não passa o dia sem...</h2>
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
               <h2 class="resp">Enviar 30 mil memes</h2>
@@ -125,7 +125,7 @@ session_start();
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   //header('Location: formulario_2.php?#aba-2');
-  $_SESSION['resp17'] = $_POST['resp1'];
+  $_SESSION['resp16'] = $_POST['resp1'];
  
 }
 

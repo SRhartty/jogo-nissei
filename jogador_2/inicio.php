@@ -1,5 +1,7 @@
 <?php
-
+if (isset($_SESSION)) {
+    session_destroy();
+}
 session_start();
 $_SESSION['id'] = $_GET['id'];
 ?>
@@ -19,8 +21,9 @@ $_SESSION['id'] = $_GET['id'];
     <div class="index">
         <div class="coluna">
             <img class="logo" src="../imagens/LOGO_2_.svg" alt="jogo para casais">
+            <img class="bannerfinal" src="../imagens/bannerfinal.svg" alt="">
             <form class="form" name="form1" id="form1" action="formulario_1.php" method="POST">
-                
+
                 <input class="button" name="iniciar" type="submit" value="iniciar jogo">
             </form>
         </div>

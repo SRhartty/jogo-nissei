@@ -2,6 +2,14 @@
 session_start();
 include_once "../conexao/conexao.php";
 
+$enviar = filter_input(INPUT_POST, 'enviar');
+if ($enviar) {
+  //header('Location: formulario_2.php?#aba-2');
+  $_SESSION['resp20'] = $_POST['resp1'];
+ 
+}
+//var_dump($_SESSION);
+
 $_SESSION['compat'] = 0;
 $id = $_SESSION['id'];
 $result_id = "SELECT * FROM resp_namorados WHERE id = '$id'";

@@ -90,7 +90,7 @@ session_start();
       <form class="formulario" method="POST" action="formulario_16.php">
         <div class="conteudo">
           <section class="conteudo1" id="aba-1">
-            <h2 class="sub">Nao troca por nada seu...</h2>
+            <h2 class="sub">Não troca por nada seu...</h2>
            
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
@@ -121,7 +121,7 @@ session_start();
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   //header('Location: formulario_2.php?#aba-2');
-  $_SESSION['resp15'] = $_POST['resp1'];
+  $_SESSION['resp14'] = $_POST['resp1'];
  
 }
 

@@ -96,7 +96,7 @@ session_start();
             <label class="radioimg" for="i1">
               <div>
               <img class="imgform" src="../imagens/noite.jpg" alt="">
-              <h2 class="subimg">noite</h2>
+              <h2 class="subimg">Noite</h2>
               </div>
             </label>
 
@@ -104,7 +104,7 @@ session_start();
             <label class="radioimg" for="i2">
               <div>
               <img class="imgform" src="../imagens/dia.jpg" alt="">
-              <h2 class="subimg">dia</h2>
+              <h2 class="subimg">Dia</h2>
               </div>
             </label>
             </div>
@@ -122,7 +122,7 @@ session_start();
 // atribui a sessao os valores dos formularios apos clicar no botao:
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
-  $_SESSION['resp2'] = $_POST['resp1'];
+  $_SESSION['resp01'] = $_POST['resp1'];
   //header('Location: formulario_3.php?#aba-3');
 }
 

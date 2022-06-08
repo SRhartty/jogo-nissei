@@ -93,12 +93,12 @@ session_start();
             <h2 class="sub">Prefere mais...</h2>
             <input name="resp1" type="radio" value="01" id="i1">
             <label class="radio" for="i1">
-              <h2 class="resp">Strogonoff.</h2>
+              <h2 class="resp">Strogonoff</h2>
             </label>
 
             <input name="resp1" type="radio" value="02" id="i2" required>
             <label class="radio" for="i2">
-              <h2 class="resp">Pizza.</h2>
+              <h2 class="resp">Pizza</h2>
             </label>
 
             <input name="resp1" type="radio" value="03" id="i3">
@@ -125,7 +125,7 @@ session_start();
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
   //header('Location: formulario_2.php?#aba-2');
-  $_SESSION['resp14'] = $_POST['resp1'];
+  $_SESSION['resp13'] = $_POST['resp1'];
  
 }
 

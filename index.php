@@ -1,4 +1,7 @@
 <?php
+if(isset ($_SESSION)){
+session_destroy();
+}
 //inicia a sessao: 
 session_start();
 
@@ -53,7 +56,7 @@ if ($enviar) {
     $_SESSION['insta'] = $_POST['insta'];
     $cpf = $_SESSION['cpf'];
 
-
+ 
 
     function validaCPF($cpf)
     {

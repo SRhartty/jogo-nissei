@@ -96,7 +96,7 @@ session_start();
             <label class="radioimg" for="i1">
               <div>
               <img class="imgform" src="../imagens/iphone.jpg" alt="">
-              <h2 class="subimg">Iphone</h2>
+              <h2 class="subimg">IPhone</h2>
               </div>
             </label>
 
@@ -122,7 +122,7 @@ session_start();
 // atribui a sessao os valores dos formularios apos clicar no botao:
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
-  $_SESSION['resp13'] = $_POST['resp1'];
+  $_SESSION['resp12'] = $_POST['resp1'];
   //header('Location: poust_database.php');
 }
 

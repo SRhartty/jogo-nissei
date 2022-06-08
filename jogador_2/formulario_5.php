@@ -103,7 +103,7 @@ session_start();
 
             <input name="resp1" type="radio" value="03" id="i3">
             <label class="radio" for="i3">
-              <h2 class="resp">Tanto faz, todo chocolate e gostoso</h2>
+              <h2 class="resp">Tanto faz, todo chocolate é gostoso</h2>
             </label>
 
             <input class="button" type="submit" name="enviar">
@@ -120,7 +120,7 @@ session_start();
 // atribui a sessao os valores dos formularios apos clicar no botao:
 $enviar = filter_input(INPUT_POST, 'enviar');
 if ($enviar) {
-  $_SESSION['resp5'] = $_POST['resp1'];
+  $_SESSION['resp4'] = $_POST['resp1'];
   //header('Location: formulario_6.php?#aba-6');
 }
 

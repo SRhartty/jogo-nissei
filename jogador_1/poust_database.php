@@ -3,6 +3,13 @@ session_start();
 //conexao com o banco de dados:
 include_once "../conexao/conexao.php";
 
+$enviar = filter_input(INPUT_POST, 'enviar');
+if ($enviar) {
+  //header('Location: formulario_2.php?#aba-2');
+  $_SESSION['resp20'] = $_POST['resp1'];
+ 
+}
+
 //envia ao banco de dados os info do formulario:
 $resp1 = $_SESSION['resp01'];
 $resp2 = $_SESSION['resp2'];
@@ -43,12 +50,12 @@ while ($row_usuario = mysqli_fetch_assoc($resultado_usuarios)) {
 }
 //gera e mostra a url para o segundo jogador:
 $URL_ATUAL = "http://$_SERVER[HTTP_HOST]/jogo_namorados/jogador_2/inicio.php?id=$iduser";
-$_SESSION['url'] = $URL_ATUAL;
-
+//$_SESSION['url'] = $URL_ATUAL;
 
 mysqli_close($link);
+//var_dump($_SESSION);
+session_destroy();
 
-//header("location: finalizar_jogador1.php");
 ?>
 
 <!DOCTYPE html>
@@ -149,8 +156,8 @@ mysqli_close($link);
                                                                 </a>
                                                         </div>
                                                         <div class="link">
-                                                                <a class="a" href="https://api.whatsapp.com/send?text=<?php echo $URL_ATUAL; ?>" target="_blank" style="text-decoration: none;">
-                                                                        <h2 class="resp" id="link"><?php echo "clique para enviar"; ?> <img class="svg" src="../imagens/copiar.svg" alt=""></h2>
+                                                                <a class="a" href="https://api.whatsapp.com/send?phone=&text=Ser%C3%A1%20que%20voc%C3%AA%20me%20conhece%20mesmo%3F%20%F0%9F%A4%94%20%F0%9F%A4%AD%20Eu%20te%20desafio%20ent%C3%A3o%20a%20testar%20seus%20conhecimentos%20sobre%20mim%<?php echo $URL_ATUAL; ?>" target="_blank" style="text-decoration: none;">
+                                                                        <h2 class="resp" id="link"><?php echo "clique para compartilhar"; ?> <img class="svg" src="../imagens/copiar.svg" alt=""></h2>
                                                                 </a>
                                                         </div>
                                                 </div>
